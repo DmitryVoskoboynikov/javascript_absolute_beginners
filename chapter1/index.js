@@ -24,3 +24,20 @@ console.log(iceCream);
 
 var newYorkSuperFudgeChunk = 4 * 300 + " calories per pint";
 console.log(newYorkSuperFudgeChunk);
+
+var iceCream = {
+
+};
+console.log(iceCream);
+
+iceCream = {
+    "Chocolate Fudge Brownie": 4 * 260
+};
+console.log(iceCream);
+
+iceCream = {
+    "Chocolate Fudge Brownie": 4 * 260,
+    "Half Baked": 4 * 250
+}
+console.log(iceCream);
+
