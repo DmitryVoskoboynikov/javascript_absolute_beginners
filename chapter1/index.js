@@ -21,3 +21,6 @@ console.log(iceCream);
 
 iceCream = "New York Super Fudge Chunk";
 console.log(iceCream);
+
+var newYorkSuperFudgeChunk = 4 * 300 + " calories per pint";
+console.log(newYorkSuperFudgeChunk);
