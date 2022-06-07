@@ -12,5 +12,12 @@ console.log( "Chocolate Fudge Brownie" === "chocolate ice cream" );
 
 console.log( Math.round((6 * 14 + 21) / 7 * 365 * 100 / (4 * 260)) + " pints of Chocolate Fudge Brownie" === "526 pints of Chocolate Fudge Brownie" );
 
+var iceCream;
 
+if (typeof iceCream == 'undefined') { console.log('variable iceCream typeof is undefined'); }
 
+iceCream = "Chocolate Fudge Brownie";
+console.log(iceCream);
+
+iceCream = "New York Super Fudge Chunk";
+console.log(iceCream);
