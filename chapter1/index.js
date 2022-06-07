@@ -87,4 +87,18 @@ iceCream.bostonCreamPie = 4 * 250;
 console.log(iceCream.bostonCreamPie + " calories per pint");
 
 //Creating an Array Literal
-
+var iceCream = [
+    "Chocolate Fudge Brownie",
+    "Half Baked",
+    "New York Super Fudge Chunk",
+    "Coffee Heath Bar Crunch",
+    "Cherry Garcia",
+    "Mud Pie",
+    "Milk & Cookies",
+    "Cinnamon Buns",
+    "Chocolate Chip Cookie Dough",
+    "Mission to Marzipan"
+];
+console.log(iceCream);
+console.log(iceCream[0]);
+console.log(iceCream[3]);
