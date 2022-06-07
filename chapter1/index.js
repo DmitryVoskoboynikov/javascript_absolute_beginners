@@ -121,4 +121,52 @@ var iceCream = {
 console.log(iceCream[5]);
 
 //Creating a Function Literal
+var iceCream = [
+    "Chocolate Fudge Brownie",
+    "Half Baked",
+    "New York Super Fudge Chunk",
+    "Coffee Heath Bar Crunch",
+    "Cherry Garcia",
+    "Mud Pie",
+    "Milk & Cookies",
+    "Cinnamon Buns",
+    "Chocolate Chip Cookie Dough",
+    "Mission to Marzipan"
+];
+console.log(iceCream);
+
+var rankFlavor = function(flavor) {
+    for (var i = iceCream.length; i--;) {
+        if (iceCream[i] === flavor) {
+            return flavor + " is number " + (i + 1) + ".";
+        }
+    }
+    return flavor + " is not among my top 10.";
+}
+
+console.log(rankFlavor("Coffee Heath Bar Crunch"));
+console.log(rankFlavor("Dublin Mudslide"));
+
+var rankFlavor = function(flavor) {
+    for (var i = rankFlavor.len; i --; ) {
+        if (rankFlavor[i] === flavor) {
+            return flavor + " is number " + (i + 1) + ".";
+        }
+    }
+    return flavor + " is not among my top 10.";
+};
+rankFlavor[0] = "Chocolate Fudge Brownie";
+rankFlavor[1] = "Half Baked";
+rankFlavor[2] = "New York Super Fudge Chunk";
+rankFlavor[3] = "Coffee Heath Bar Crunch";
+rankFlavor[4] = "Everything but the...";
+rankFlavor[5] = "Mud Pie";
+rankFlavor[6] = "Karamel Sutra";
+rankFlavor[7] = "Cinnamon Buns";
+rankFlavor[8] = "Milk & Cookies";
+rankFlavor[9] = "Mission to Marzipan";
+rankFlavor.len = 10;
+
+console.log(rankFlavor("New York Super Fudge Chunk"));
+console.log(rankFlavor("Peanut Brittle"));
 
