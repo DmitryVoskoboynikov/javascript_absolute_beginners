@@ -41,3 +41,43 @@ iceCream = {
 }
 console.log(iceCream);
 
+var iceCream = {
+    "Chocolate Fudge Brownie": 4 * 260,
+    "Half Baked": 4 * 250,
+    "New York Super Fudge Chunk": 4 * 300,
+    "Coffee Heath Bar Crunch": 4 * 280,
+    "Cherry Garcia": 4 * 240,
+    "Mud Pie": 4 * 270,
+    "Milk & Cookies": 4 * 270,
+    "Cinnamon Buns": 4 * 290,
+    "Chocolate Chip Cookie Dough": 4 * 270,
+    "Mission to Marzipan": 4 * 260
+};
+console.log(iceCream);
+
+console.log(iceCream["Chocolate Fudge Brownie"] + " calories per pint");
+
+iceCream["Half Baked"] = 4 * 270;
+console.log(iceCream["Half Baked"] + " calories per pint");
+
+iceCream["Peanut Butter Cup"] = 4 * 360;
+console.log(iceCream["Peanut Butter Cup"] + " calories per pint");
+
+delete iceCream["Peanut Butter Cup"];
+console.log(iceCream["Peanut Butter Cup"] + " calories per pint");
+
+var iceCream = {
+    chocolateFudgeBrownie: 4 * 260,
+    halfBaked: 4 * 270,
+    newYorkSuperFudgeChunk: 4 * 300,
+    coffeeHeathBarCrunch: 4 * 280,
+    cherryGarcia: 4 * 240,
+    mudPie: 4 * 270,
+    milkCookies: 4 * 270,
+    cinnamonBuns: 4 * 290,
+    chocolateChipCookieDough: 4 * 270,
+    missionToMarzipan: 4 * 260
+};
+console.log(iceCream);
+
+
