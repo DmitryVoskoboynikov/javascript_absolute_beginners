@@ -25,6 +25,7 @@ console.log(iceCream);
 var newYorkSuperFudgeChunk = 4 * 300 + " calories per pint";
 console.log(newYorkSuperFudgeChunk);
 
+//Creating an Object literal
 var iceCream = {
 
 };
@@ -80,4 +81,10 @@ var iceCream = {
 };
 console.log(iceCream);
 
+console.log(iceCream.newYorkSuperFudgeChunk + " calories per pint");
+
+iceCream.bostonCreamPie = 4 * 250;
+console.log(iceCream.bostonCreamPie + " calories per pint");
+
+//Creating an Array Literal
 
