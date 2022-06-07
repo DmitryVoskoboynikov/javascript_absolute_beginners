@@ -102,3 +102,23 @@ var iceCream = [
 console.log(iceCream);
 console.log(iceCream[0]);
 console.log(iceCream[3]);
+
+iceCream[9] = "Boston Cream Pie";
+console.log(iceCream[9]);
+
+var iceCream = {
+    "0": "Chocolate Fudge Brownie",
+    "1": "Half Baked",
+    "2": "New York Super Fudge Chunk",
+    "3": "Coffee Heath Bar Crunch",
+    "4": "Cherry Garcia",
+    "5": "Mud Pie",
+    "6": "Milk & Cookies",
+    "7": "Cinnamon Buns",
+    "8": "Chocolate Chip Cookie Dough",
+    "9": "Mission to Marzipan"
+};
+console.log(iceCream[5]);
+
+//Creating a Function Literal
+
