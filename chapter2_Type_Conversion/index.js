@@ -45,3 +45,52 @@ var titleCase = function(m) {
 console.log("batman, spider-man, iron man".replace(/\b\w+\b/g, titleCase));
 
 //Splitting a String into an Array of Smaller Strings
+var villains = "Green Goblin, Doctor Octopus, Venom, Hobgoblin, Sandman";
+console.log(villains.split(", "));
+
+var villains = "Green Goblin, Doctor Octopus, Venom, Hobgoblin, and Sandman";
+console.log(villains.split(/, (?:and )?/g));
+
+var villains = "Green Goblin, Doctor Octopus, Venom, Hobgoblin, and Sandman";
+villains = villains.split(/, (?:and )?/g);
+console.log(villains[1]);
+
+var villains = "Green Goblin, Doctor Octopus, Venom, Hobgoblin, and Sandman";
+console.log(villains.match(/[Gg]oblin/g));
+
+//Explicitly Creating Wrappers
+var pre = new String("Hob");
+var post = pre.concat("goblin");
+console.log(pre.valueOf());
+console.log(post);
+
+//Converting a Value to Another Type
+console.log(Boolean(undefined));
+console.log(Boolean(null));
+console.log(Boolean(false));
+console.log(Boolean(""));
+console.log(Boolean(0));
+console.log(Boolean(NaN));
+
+console.log(Boolean(String.fromCharCode));
+
+//Converting a Value to a Number
+console.log('/** Converting a Value to a Number */');
+
+console.log(Number(undefined));
+console.log(Number(null));
+
+var nothing, zilch = null;
+console.log(nothing * 4);
+console.log(zilch * 4);
+
+console.log(Number("4"));
+console.log(Number(""));
+console.log(Number("Mr. Incredible"));
+
+console.log(Number(["Green Goblin", "Doctor Octopus", "Sandman"]));
+console.log(Number({hero: "Batman", archenemy: "Joker"}));
+console.log(Number(String.fromCharCode));
+
+//Converting a Value to a String
+console.log('/** Converting a Value to a String */');
