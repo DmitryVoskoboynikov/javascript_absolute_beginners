@@ -94,3 +94,26 @@ console.log(Number(String.fromCharCode));
 
 //Converting a Value to a String
 console.log('/** Converting a Value to a String */');
+
+console.log("Mezmerella"[2]);
+console.log("Mezmerella"["2"]);
+
+console.log(String(undefined));
+console.log(String(null));
+console.log(String(true));
+console.log(String(false));
+
+console.log(String(["Green Goblin", "Doctor Octopus", "Sandman"]));
+console.log(["Green Goblin", "Doctor Octopus", "Sandman"].toString());
+
+console.log(({"Bob Parr": "Mr. Incredible", "Helen Parr": "Elastigirl"}).toString());
+console.log(String({"Bob Parr": "Mr. Incredible", "Helen Parr": "Elastigirl"}));
+
+//Methods for Converting a Number to a String
+console.log('/** Methods for Converting a Number to a String */');
+
+//Putting Off Learning RegExp Syntax
+console.log('/** Putting Off Learning RegExp Syntax */');
+
+
+
