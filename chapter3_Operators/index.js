@@ -152,4 +152,36 @@ console.log([1 + 2/3, "cup"] === [1 + 2/3, "cup"]); //false
 // Determining Whether One Number of String is Greater Than Another
 console.log('/**  Determining Whether One Number of String is Greater Than Another */');
 
+var cake = {
+    dough: {
+        organicPastryFlour: [1 + 1 / 2, "cup"],
+        freshlyGroundNutmeg: [1 / 4, "tsp"],
+        saigonCinnamon: [1 / 2, "tsp"],
+        soda: [1, "tsp"],
+        tartar: [1, "tsp"],
+        egg: [2],
+        yogurtCheese: [2 / 3, "cup"],
+        pureMapleSyrup: [1 / 3, "cup"],
+        shreddedGrannySmith: [1 + 2 / 3, "cup"],
+        choppedPecans: [1 / 2, "cup"]
+    },
+    icing: {
+        yogurtCheese: [2 / 3, "cup"],
+        pureMapleSyrup: [1 + 1/3, "tbs"],
+        groundPecans: [2, "tsp"]
+    }
+};
+
+console.log(cake);
+
+console.log(cake.dough.organicPastryFlour[0] > cake.dough.shreddedGrannySmith[0]); //false
+console.log(cake.dough.choppedPecans[0] > cake.dough.pureMapleSyrup[0]); // ture
+console.log(cake.dough.freshlyGroundNutmeg[0] > cake.dough.saigonCinnamon[0]); //false
+console.log(cake.icing.yogurtCheese[0] > cake.dough.yogurtCheese[0]); // false
+
+
+var compare = "apple" > "Granny Smith";
+console.log(compare); //true
+console.log("apple".toLowerCase() > "Granny Smith".toLowerCase()); // false
+
 
