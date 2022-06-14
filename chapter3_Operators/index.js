@@ -288,3 +288,26 @@ console.log(muffin.boysenberries[0] > muffin.choppedPecans[0] && muffin.pastryFl
 // Conditionally Returning One of Two Values
 console.log("/** Conditionally Returning One of Two Values */");
 
+var fridge = {
+    buttermilk: [1/3, "cup"],
+    kefir: [1 + 1/2, "cup"],
+    yogurt: [4, "cup"],
+};
+
+var dough = {
+    hardWhiteWholeWheatFlour: [2, "cup"],
+    sugar: [1/3, "cup"],
+    madagascarVanilla: [1, "tsp"],
+    orangeZest: [1, "tbs"],
+    soda: [1, "tsp"],
+    tartar: [1, "tsp"],
+    orangeJuice: [1/2, "cup"],
+    culturedMilk: [1/2, "cup"],
+    egg: [1],
+    cranberries: [2/3, "cup"]
+};
+
+dough.culturedMilk[0] = fridge.buttermilk[0] < 1/2 && fridge.kefir[0] >= 9/16 ? 9/16 :
+    fridge.yogurt[0] >= 10/16 ? 10/16 :
+    alert("No cranberry bread for you!");
+console.log(dough.culturedMilk);
