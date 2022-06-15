@@ -249,5 +249,196 @@ console.log("I feel " + findTea("Kenilworth") + "!");
 // Writing a do while loop
 console.log("/** Writing a do while loop */");
 
+var spices = [
+    "cinnamon",
+    "ginger",
+    "nutmeg",
+    "cloves",
+    "sesame seed",
+    "pepper",
+    "rosemary",
+    "tarragon",
+    "basil",
+    "mace",
+    "poppy seed",
+    "lemon peel",
+    "vanilla",
+    "oregano",
+    "allspice",
+    "thyme"
+];
 
+//console.log(spices);
 
+var putTheKaiboshOn = true;
+var i = 0;
+do {
+    if (spices[i] === "lemon peel")
+    {
+        putTheKaiboshOn = false;
+        break;
+    }
+
+    i++;
+} while (i < spices.length);
+
+console.log((putTheKaiboshOn) ? "No can do!" : "Go right ahead!");
+
+// Writing a for Loop
+console.log("/** Writing a for Loop */");
+
+var theFall = [
+    "Chasing Pirates",
+    "Even Though",
+    "Light as a Feather",
+    "Young Blood",
+    "I Wouldn't Need You",
+    "Waiting",
+    "It's Gonna Be",
+    "You've Ruined Me",
+    "Back to Manhattan",
+    "Stuck",
+    "December",
+    "Tell Yer Mama",
+    "Man of the Hour"
+];
+
+var song = "Back to Manhattan";
+
+for (var i = 0, j = 0; i < theFall.length; i ++) {
+    if (theFall[i] === song) {
+        j = i + 1;
+        break;
+    }
+}
+
+console.log(song + (j > 0 ? " is track " + j : " is not ") + " on The Fall.");
+
+// Enumerating Members with a for in Loop
+console.log("/** Enumerating Members with a for in Loop */");
+
+var shoes = {
+    "LunaRacer": 6.6,
+    "Air Max": 13,
+    "LunarGlide": 10.2,
+    "Zoom Streak XC": 7,
+    "Free": 8.6,
+    "Mayfly": 4,
+    "Zoom Vomero": 11.6,
+    "LunarElite": 9.7
+}
+
+var myOptions = [];
+for (var shoe in shoes) {
+    if (shoes[shoe] >= 10)
+    {
+        myOptions.push(shoe);
+    }
+}
+
+console.log(myOptions);
+
+// Snappier Conditionals
+console.log("/** Snappier Conditions */");
+
+function namePirate(jersey) {
+    var name;
+    switch (jersey) {
+        case 77:
+            name = "D.J. Carrasco";
+            break;
+        case 53:
+            name = "Brendan Donnelly";
+            break;
+        case 29:
+            name = "Octavio Dotel";
+            break;
+        case 46:
+            name = "Garrett Jones";
+            break;
+        default:
+            name = "not worn by any Pirate";
+    }
+
+    return jersey + " is " + name + ".";
+}
+
+console.log(namePirate(46));
+
+var pirates = {
+    "77": "D.J. Carrasco",
+    "53": "Brendan Donnelly",
+    "29": "Octavio Dotel",
+    "57": "Zach Duke",
+    "48": "Javier Lopez",
+    "28": "Paul Maholm",
+    "34": "Daniel McCutchen",
+    "47": "Evan Meek",
+    "37": "Charlie Morton",
+    "49": "Ross Ohlendorf",
+    "62": "Hayden Penn",
+    "43": "Jack Taschner",
+    "41": "Ryan Doumit",
+    "35": "Jason Jaramillo",
+    "13": "Ronny Cedeno",
+    "6": "Jeff Clement",
+    "2": "Bobby Crosby",
+    "3": "Akinori Iwamura",
+    "15": "Andy LaRoche",
+    "19": "Ryan Church",
+    "46": "Garrett Jones",
+    "22": "Andrew McCutchen",
+    "85": "Lastings Milledge",
+    "58": "John Raynor",
+    "24": "Delwyn Young"
+};
+
+function namePirate1(jersey)
+{
+    return jersey + " is " + (pirates[jersey] ? pirates[jersey] : "not worn by a Pirate") + ".";
+}
+
+console.log(namePirate1(3));
+
+// Snappier Loops
+console.log("/** Snappier Loops */");
+
+var topTwenty = {
+    "Crosby": 49,
+    "Ovechkin": 48,
+    "Stamkos": 48,
+    "Marleau": 43,
+    "Gaborik": 41,
+    "Kovalchuk": 40,
+    "Heatley": 39,
+    "Semin": 39,
+    "Parise": 37,
+    "Burrows": 35,
+    "Kopitar": 34,
+    "Ryan": 34,
+    "Carter": 33,
+    "Nash": 33,
+    "Iginla": 32,
+    "Penner": 32,
+    "Backstrom": 31,
+    "Hornqvist": 30,
+    "Jokinen": 30,
+    "Kane": 30
+};
+
+var rocketRichard = ["Ovechkin", "Crosby", "Marleau", "Stamkos"], note = "";
+
+rocketRichard.sort(function(p1, p2) {
+    var d = topTwenty[p2] - topTwenty[p1];
+    if (d !== 0) {
+        return d;
+    } else {
+        return (p1 < p2) ? -1 : 1;
+    }
+});
+
+for (var i = 0; i < rocketRichard.length; i ++) {
+    note = note + rocketRichard[i] + ": " + topTwenty[rocketRichard[i]] + ", ";
+}
+
+console.log(note.slice(0, -2));
