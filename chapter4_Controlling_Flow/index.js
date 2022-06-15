@@ -426,10 +426,13 @@ var topTwenty = {
     "Kane": 30
 };
 
-var rocketRichard = ["Ovechkin", "Crosby", "Marleau", "Stamkos"], note = "";
+var rocketRichard = ["Ovechkin", "Crosby", "Marleau", "Stamkos", "Gaborik"], note = "";
+
+console.log(rocketRichard);
 
 rocketRichard.sort(function(p1, p2) {
     var d = topTwenty[p2] - topTwenty[p1];
+    console.log(p1, p2, d);
     if (d !== 0) {
         return d;
     } else {
