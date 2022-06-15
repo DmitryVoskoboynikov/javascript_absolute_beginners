@@ -213,6 +213,41 @@ console.log(looseLeafTea);
 // Replacing Break with Return in a Function
 console.log("/** Replacing Break with Return in a Function */");
 
+var looseLeafTea = [
+    "Ghillidary",
+    "Kenilworth",
+    "Milima",
+    "Keemun",
+    "Boisahabi",
+    "Manohari",
+    "Borpatra",
+    "Lukwah",
+    "Khongea"
+];
+
+//console.log(looseLeafTea);
+
+function findTea(tea) {
+    var i = 0;
+    while (i < looseLeafTea.length)
+    {
+        if (looseLeafTea[i] === tea) {
+            return "cheery";
+        } else if (! looseLeafTea[i]) {
+            looseLeafTea.splice(i, 1);
+            continue;
+        } else {
+            i++;
+        }
+    }
+
+    return "glum";
+}
+
+console.log("I feel " + findTea("Kenilworth") + "!");
+
+// Writing a do while loop
+console.log("/** Writing a do while loop */");
 
 
 
