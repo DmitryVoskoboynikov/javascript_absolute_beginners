@@ -69,3 +69,4 @@ console.log(vanilla.heavyCream === coffee.heavyCream &&
     mintChocolateChunk.heavyCream === chocolate.heavyCream); //true
 
 console.log(mintChocolateChunk.yolks); // 4
+console.log(mintChocolateChunk.__proto__.__proto__.__proto__.yolks); // 6
