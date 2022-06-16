@@ -66,4 +66,6 @@ console.log(vanilla.heavyCream === coffee.heavyCream &&
     vanilla.heavyCream === mintChocolateChunk.heavyCream &&
     mintChocolateChunk.heavyCream === coffee.heavyCream &&
     coffee.heavyCream === chocolate.heavyCream &&
-    mintChocolateChunk.heavyCream === chocolate.heavyCream);
+    mintChocolateChunk.heavyCream === chocolate.heavyCream); //true
+
+console.log(mintChocolateChunk.yolks); // 4
