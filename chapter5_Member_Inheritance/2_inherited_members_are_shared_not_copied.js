@@ -61,6 +61,11 @@ console.log(Object.getPrototypeOf(Object.getPrototypeOf(mintChocolateChunk)));
 console.log(Object.getPrototypeOf(Object.getPrototypeOf(Object.getPrototypeOf(mintChocolateChunk))));
 console.log("// end of mintChocolateChunk object \n");
 
+// Really shared
+mintChocolateChunk.__proto__.__proto__.__proto__.heavyCream = [5];
+console.log(mintChocolateChunk.heavyCream);
+console.log(vanilla.heavyCream);
+
 console.log(vanilla.heavyCream === coffee.heavyCream &&
     vanilla.heavyCream === chocolate.heavyCream &&
     vanilla.heavyCream === mintChocolateChunk.heavyCream &&
