@@ -431,13 +431,20 @@ var rocketRichard = ["Ovechkin", "Crosby", "Marleau", "Stamkos", "Gaborik"], not
 console.log(rocketRichard);
 
 rocketRichard.sort(function(p1, p2) {
+    // Hard way
     var d = topTwenty[p2] - topTwenty[p1];
-    console.log(p1, p2, d);
+    //console.log(p1, p2, d);
     if (d !== 0) {
         return d;
     } else {
         return (p1 < p2) ? -1 : 1;
     }
+
+    //Simple way
+    if (topTwenty[p1] == topTwenty[p2]) {
+        return (p1 < p2) ? -1 : 1;
+    }
+    return (topTwenty[p1] > topTwenty[p2]) ? -1 : 1;
 });
 
 for (var i = 0; i < rocketRichard.length; i ++) {
